@@ -86,8 +86,8 @@
                         <ul>
 
                             <li v-for="(item, index) in menu" :key="index">
-                                <a href="item.url" :class="item.active ? 'active' :''"></a>
-                                {{ item.label }}
+                                <a href="item.url" :class="item.active ? 'active' :''">{{ item.label }}</a>
+                                <div v-if="item.active" class="blue-bar"></div>
                             </li>
 
                         </ul>
@@ -128,16 +128,6 @@
         justify-content: space-between;
     }
 
-    ul{
-        @include center;
-    }
-
-    li{
-        display: inline-block;
-        margin: 10px;
-        font-size: 12px;
-    }
-
     .active{
         color: $blue;
     }
@@ -149,5 +139,33 @@
         margin-bottom: 20px;
     }
 
+    header{
+
+        ul {
+            @include center;
+        }
+
+        li {
+            display: inline-block;
+            margin: 10px;
+            font-size: 12px;
+            position: relative;
+
+            a{
+                text-decoration: none;
+                color: $black;
+                font-weight: 50%;
+            }
+        }
+
+    }
+
+    .blue-bar{
+        height: 5px;
+        width: 45px;
+        background-color: $blue;
+        position: absolute;
+        bottom: -46px;
+    }
 
 </style>
