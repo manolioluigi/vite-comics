@@ -121,7 +121,7 @@
 
     .col-menu{
         width: 70%;
-        padding-right: 10vw;
+        padding-right: 0vw;
     }
 
     .between{
@@ -134,7 +134,7 @@
 
     .logo{
         width: 70px;
-        margin-left: 10vw;
+        margin-left: 15vw;
         margin-top: 20px;
         margin-bottom: 20px;
     }

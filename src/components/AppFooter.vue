@@ -251,8 +251,8 @@
 
         .between{
             justify-content: space-between;
-            padding-left: 10vw;
-            padding-right: 10vw;
+            padding-left: 15vw;
+            padding-right: 15vw;
         }
     }
 
